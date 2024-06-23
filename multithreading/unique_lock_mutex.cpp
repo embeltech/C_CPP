@@ -9,7 +9,7 @@ int shared_variable = 0;
 void func(int id, char c)
 {
     // deferred locking. create object but do not lock mutex at the time of creation.
-    //std::unique_lock<std::mutex> uLock(mtx,defer_lock);
+    //std::unique_lock<std::mutex> uLock(mtx,std::defer_lock);
     for(int i = 0; i<20; i++)
     {
        
