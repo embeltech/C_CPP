@@ -93,6 +93,12 @@
 6. digit separators
 7. return type deduction for functions
 8. aggregate classes with default non-static member initializers.
+9. Standard user-defined literals
+    - auto str = "hello world"s; //auto deduces string
+    - auto dur = 60s;            // auto deduces chrono::seconds
+10. Tuple addressing via type
+    - tuple<string, string, int> t("foo", "bar", 7);
+    - int i = get<int>(t);        // i == 7
 
 ## New library features
 9. std::make_unique
