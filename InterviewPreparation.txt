@@ -20,14 +20,26 @@ Generic C++ Study Part
     -> pointers can be NULL
   -> Reassignment
     -> Whenever reassignment is needed prefer pointer else use reference as reassignment of reference to other variable is not possible.
-6.Singleton design pattern?
-7.Static key word in C++?
-8.what compiler provides by default in C++?
-8.Factory design patterns
-9.Proxy
-10.Copy constructor and assignment operator
-11. what IPC u used between chips?
-12. Observer pattern
+6.Static key word in C++?
+7.what compiler provides by default in C++?
+  -> default constructor, 
+  -> default copy constructor
+  -> default copy-assignment operator
+  -> default destructor
+8.explicit keyword
+  -> if explicit is used for CTOR, copy CTOR, DTOR then compiler do not generate them by default. No implicit type casting is done by compiler.
+9. What is IPC? Name some of them.
+  -> shared memory (used by POSIX)
+  -> Message Queues (used by Mac)
+  -> Pipe
+  -> socket
+  -> remote procedural call RPC (windows uses local procedural call)
+10. IPC synchronization
+11. Design Patterns
+  Creational : Singleton, factory  (product - concrete product, product factory - concrete product factory)
+  Structural : Proxy              (real service, proxy service)
+  Behavioral : Observer pattern  (publisher, subscriber)
+Proxy
 ----------------------------------------------------------------------------
 TTL JV 1 interview
 
