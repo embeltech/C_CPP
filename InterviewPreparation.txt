@@ -1,6 +1,6 @@
 Generic C++ Study Part
 1.What is Vtable and Vptr how it works?
-2.What is virtual discturctor, why it is used?
+2.What is virtual destructor, why it is used?
 3.Why virtual function or pure virtual fuction is used?
 4.Can we use Virtual destructor and virtual contructor?
 5. Difference betw pointer and refernce and why ref is used?
