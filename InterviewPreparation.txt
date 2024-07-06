@@ -9,13 +9,17 @@ Generic C++ Study Part
   -> to force derived classes to provide its body else derived class becomes abstract.
   -> pure virtual function can have body. It cannot have body inline but should be given outside of class using scope resolution. 
   -> Pure virtual function body can be called from derived class which implements it using base::pure_virtual_func().
-4.Can we use Virtual destructor and virtual contructor?
-5. Difference betw pointer and refernce and why ref is used?
-  -> Reference is just another name for memory location of variable so no additional memory space is used by referennce
-  -> Pointer is separate memory location which holds address of memory location of variable
-  -> reference cannot be NULL as it has to be assigned value at the time of declaration or before using it so no segmentation fault.
-  -> pointers can be NULL
-  -> Whenever reassignment is needed prefer pointer else use reference as reassignment of reference to other variable is not possible.
+4.Can we use virtual contructor?
+  -> No. At the time of constructing object Vtable and __vptr are not available.
+5. Difference between pointer and refernce and why ref is used?
+  -> Memory location
+    -> Reference is just another name for memory location of variable so no additional memory space is used by referennce
+    -> Pointer is separate memory location which holds address of memory location of variable
+  -> Null Check
+    -> reference cannot be NULL as it has to be assigned value at the time of declaration or before using it so no segmentation fault.
+    -> pointers can be NULL
+  -> Reassignment
+    -> Whenever reassignment is needed prefer pointer else use reference as reassignment of reference to other variable is not possible.
 6.Singleton design pattern?
 7.Static key word in C++?
 8.what compiler provides by default in C++?
