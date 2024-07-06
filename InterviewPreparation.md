@@ -56,8 +56,14 @@
     - final keyword if used at the end of virtual function of base class, that function cannot be overridden in derived class
     - final keyword if used at the end of base class, that class cannot be inherited further.
 5. Smart Pointers
-6. Lambdas
-7. Initializer lists
+    - list all member functions
+        - shared_ptr : reset,use_count
+        - unique_ptr : reset,release,std::move
+        - weak_ptr : reset,expired,lock
+    - implement your own version of shared_ptr, unique_ptr, weak_ptr
+    - why auto_ptr removed in cpp17
+7. Lambdas
+8. Initializer lists
 9. Delegating constructors
 10. Move Semantics
 11. std::thread
