@@ -1,7 +1,9 @@
 Generic C++ Study Part
 1.What is Vtable and Vptr how it works?
 2.What is virtual destructor, why it is used?
-3.Why virtual function or pure virtual fuction is used?
+3.pure virtual fuction is used?
+  -> one or more pure virtual functions makes class abstract whose object creation is not possible.
+  -> to force derived classes to provide its body else derived class becomes abstract.
 4.Can we use Virtual destructor and virtual contructor?
 5. Difference betw pointer and refernce and why ref is used?
   -> Reference is just another name for memory location of variable so no additional memory space is used by referennce
