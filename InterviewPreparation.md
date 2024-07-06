@@ -83,8 +83,8 @@
 ## New language features
 1. variable templates
 2. lambdas
-    - generic lambda
-    - lambda init-capture
+    - generic lambda : use of auto in parameters datatype
+    - lambda init-capture : initializing captured variable in capture clause
 3. new/delete elision
 4. relaxed restrictions on constexpr functions
     - multiple return statements allowed
