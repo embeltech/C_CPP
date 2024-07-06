@@ -52,20 +52,20 @@
     - use nullptr for null pointers
 3. Range-Based for Loops
 4. Override and Final
-      - override used at the end of class member function to ensure correct function is overriden in derived class
-      - final keyword if used at the end of virtual function of base class, that function cannot be overridden in derived class
-      - final keyword if used at the end of base class, that class cannot be inherited further.
+    - override used at the end of class member function to ensure correct function is overriden in derived class
+    - final keyword if used at the end of virtual function of base class, that function cannot be overridden in derived class
+    - final keyword if used at the end of base class, that class cannot be inherited further.
 5. Smart Pointers
 6. Lambdas
 7. Initializer lists
-8. Delegating constructors
-9. Move Semantics
-10. std::thread
-11. The constexpr keyword
-12. explicit
-13. std::function
-14. Deleted and defaulted functions
-15. Strongly-typed Enums
+9. Delegating constructors
+10. Move Semantics
+11. std::thread
+12. The constexpr keyword
+13. explicit
+14. std::function
+15. Deleted and defaulted functions
+16. Strongly-typed Enums
 
 -------------------------------------------------------------------------------------------------------------------
 # C++ 14
