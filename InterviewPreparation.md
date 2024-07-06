@@ -71,7 +71,9 @@
 13. explicit
 14. std::function
 15. Deleted and defaulted functions
-16. Strongly-typed Enums
+16. Strongly-typed,scoped Enums
+    - strongly typed : underlying datatype can be provided. enum class colours:char{red,green,blue}
+    - strongly scoped : colours var = colours::red;
 
 -------------------------------------------------------------------------------------------------------------------
 # C++ 14
