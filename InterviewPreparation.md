@@ -84,7 +84,7 @@
 1. variable templates
 2. lambdas
     - generic lambda : use of auto in parameters datatype
-    - lambda init-capture : initializing captured variable in capture clause
+    - lambda init-capture : initializing captured variable in capture clause. capture by move useful for unique_ptr
 3. new/delete elision
 4. relaxed restrictions on constexpr functions
     - multiple return statements allowed
