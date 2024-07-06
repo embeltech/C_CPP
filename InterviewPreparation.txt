@@ -4,6 +4,11 @@ Generic C++ Study Part
 3.Why virtual function or pure virtual fuction is used?
 4.Can we use Virtual destructor and virtual contructor?
 5. Difference betw pointer and refernce and why ref is used?
+  -> Reference is just another name for memory location of variable so no additional memory space is used by referennce
+  -> Pointer is separate memory location which holds address of memory location of variable
+  -> reference cannot be NULL as it has to be assigned value at the time of declaration or before using it so no segmentation fault.
+  -> pointers can be NULL
+  -> Whenever reassignment is needed prefer pointer else use reference as reassignment of reference to other variable is not possible.
 6.Singleton design pattern?
 7.Static key word in C++?
 8.what compiler provides by default in C++?
