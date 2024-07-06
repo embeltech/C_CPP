@@ -1,0 +1,95 @@
+Generic C++ Study Part
+1.What is Vtable and Vptr how it works?
+2.What is virtual discturctor, why it is used?
+3.Why virtual function or pure virtual fuction is used?
+4.Can we use Virtual destructor and virtual contructor?
+5. Difference betw pointer and refernce and why ref is used?
+6.Singleton design pattern?
+7.Static key word in C++?
+8.what compiler provides by default in C++?
+8.Factory design patterns
+9.Proxy
+10.Copy constructor and assignment operator
+11. what IPC u used between chips?
+12. Observer pattern
+----------------------------------------------------------------------------
+TTL JV 1 interview
+
+1.What Producto platform u used?
+ HW arm chip AP PP
+  SW Linux
+2.For arm chip how build on your m/c for HW?
+-  Cross complilation using Vmware and on server jenkins
+2.How PP AA chips communicate ?
+Dbus
+3.How service carsh debugging take place?
+coredump and logging
+4.How to test if target maching is not availabel?
+Simulation ,  
+5.How to do developer testing for fuction you were written?
+UTC, manually test, automation.
+6.How to debug in production enviromrnt if logs are disable?
+Via Diagnostic mode to get critical data from ECU clustuer?
+7.How to ensure quality of code.
+Use static code analyzer like Parasoft
+Misra compilance
+Valgrind - memory likes
+8.Code review checklist
+Is UTC doe?
+Is Developer test done on simulation + HW
+Is pear reviews doen with in team
+All coding guideline followed
+Misra compalnce
+Static code parasof and valagring report available
+Test reports and flow diag attached
+Any impediance or viewers ?
+9.What challagening problem you solved
+??HMI perfromance issue
+
+10.Ledership experience to handle team?
+---------------------------------------------------------------------------------
+
+New JD TTL JV topics for C++ linux
+
+C++ 11
+**auto
+**nullptr
+Range-Based for Loops
+**Override and Final
+Strongly-typed Enums
+**Smart Pointers
+**Lambdas
+Initializer lists
+Delegating constructors
+**Move Semantics
+**std::thread
+The constexpr keyword
+explicit
+std::function
+Deleted and defaulted functions
+
+C++ 14
+New language features
+variable templates
+**generic lambdas
+lambda init-capture
+new/delete elision
+**relaxed restrictions on constexpr functions
+binary literals
+*digit separators
+*return type deduction for functions
+aggregate classes with default non-static member initializers.
+
+New library features
+std::make_unique
+std::shared_timed_mutex and std::shared_lock
+
+C++ 17
+Nested Namespaces
+Variable declaration in if and switch
+if constexpr statement
+Structured bindings
+Fold Expressions
+Direct list initialization of enums
+https://www.geeksforgeeks.org/features-of-c17-with-examples/
+https://www.codingame.com/playgrounds/2205/7-features-of-c17-that-will-simplify-your-code/introduction
