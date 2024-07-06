@@ -4,6 +4,8 @@ Generic C++ Study Part
 3.pure virtual fuction is used?
   -> one or more pure virtual functions makes class abstract whose object creation is not possible.
   -> to force derived classes to provide its body else derived class becomes abstract.
+  -> pure virtual function can have body. It cannot have body inline but should be given outside of class using scope resolution. 
+  -> Pure virtual function body can be called from derived class who implements it using base::pure_virtual_func().
 4.Can we use Virtual destructor and virtual contructor?
 5. Difference betw pointer and refernce and why ref is used?
   -> Reference is just another name for memory location of variable so no additional memory space is used by referennce
