@@ -80,11 +80,20 @@ Any impediance or viewers ?
 New JD TTL JV topics for C++ linux
 
 C++ 11
-**auto
-**nullptr
+Type inference
+  -> auto - type infered from values assigned to variables.
+  -> decltype() - needs additinal information to infer type. Better for expressions.
+nullptr
+  -> NULL defined as (void *) 0 in #include<stddef.h>
+  -> NULL implicitly typecasted to int x= NULL;
+  -> func(NULL) will create ambiguity to resolve to func(char * ptr) or func(int)
+  -> use nullptr for null pointers
 Range-Based for Loops
-**Override and Final
-Strongly-typed Enums
+Override and Final
+  -> override used at the end of class member function to ensure correct function is overriden in derived class
+  -> final keyword if used at the end of virtual function of base class, that function cannot be overridden in derived class
+  -> final keyword if used at the end of base class, that class cannot be inherited further.
+
 **Smart Pointers
 **Lambdas
 Initializer lists
@@ -95,6 +104,7 @@ The constexpr keyword
 explicit
 std::function
 Deleted and defaulted functions
+Strongly-typed Enums
 
 C++ 14
 New language features
