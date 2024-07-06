@@ -68,37 +68,44 @@
 10. Move Semantics
 11. std::thread
 12. The constexpr keyword
-13. explicit
-14. std::function
-15. Deleted and defaulted functions
-16. Strongly-typed,scoped Enums
+    - It removes the function calls and evaluates the code/expressions in compile time.
+    - should contain only one return statement
+    - prefix increment (++v) was not allowed
+14. explicit
+15. std::function
+16. Deleted and defaulted functions
+17. Strongly-typed,scoped Enums
     - strongly typed : underlying datatype can be provided. enum class colours:char{red,green,blue}
     - strongly scoped : colours var = colours::red;
 
 -------------------------------------------------------------------------------------------------------------------
 # C++ 14
-New language features
-variable templates
-**generic lambdas
-lambda init-capture
-new/delete elision
-**relaxed restrictions on constexpr functions
-binary literals
-*digit separators
-*return type deduction for functions
-aggregate classes with default non-static member initializers.
+## New language features
+1. variable templates
+2. lambdas
+    - generic lambda
+    - lambda init-capture
+3. new/delete elision
+4. relaxed restrictions on constexpr functions
+    - should contain only one return statement
+    - prefix increment (++v) was not allowed
+5. binary literals
+6. digit separators
+7. return type deduction for functions
+8. aggregate classes with default non-static member initializers.
 
-New library features
-std::make_unique
-std::shared_timed_mutex and std::shared_lock
+## New library features
+9. std::make_unique
+10. std::shared_timed_mutex and std::shared_lock
 
-C++ 17
-Nested Namespaces
-Variable declaration in if and switch
-if constexpr statement
-Structured bindings
-Fold Expressions
-Direct list initialization of enums
+----------------------------------------------------------
+# C++ 17
+1. Nested Namespaces
+2. Variable declaration in if and switch
+3. if constexpr statement
+4. Structured bindings
+5. Fold Expressions
+6. Direct list initialization of enums
 
 ------------------------------------------------
 TTL JV 1 interview
