@@ -87,8 +87,8 @@
     - lambda init-capture
 3. new/delete elision
 4. relaxed restrictions on constexpr functions
-    - should contain only one return statement
-    - prefix increment (++v) was not allowed
+    - multiple return statements allowed
+    - prefix increment (++v) allowed
 5. binary literals
 6. digit separators
 7. return type deduction for functions
