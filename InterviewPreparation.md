@@ -105,8 +105,8 @@
     - auto str = "hello world"s; //auto deduces string
     - auto dur = 60s;            // auto deduces chrono::seconds
 12. Tuple addressing via type
-    - tuple<string, string, int> t("foo", "bar", 7);
-    - int i = get<int>(t);        // i == 7
+    - std::tuple<string, string, int> t("foo", "bar", 7);
+    - int i = std::get<int>(t);        // i == 7
 
 ## New library features
 9. std::make_unique
