@@ -84,36 +84,36 @@
 1. variable templates
     - template <class T> constexpr T e = T(2.718281828459045);
     - int x = e<int>; double d = e<double>;
-3. lambdas
+2. lambdas
     - generic lambda : use of auto in parameters datatype
     - lambda init-capture : initializing captured variable in capture clause. capture by move useful for unique_ptr
-4. new/delete elision
-5. relaxed restrictions on constexpr functions
+3. new/delete elision
+4. relaxed restrictions on constexpr functions
     - multiple return statements allowed
     - prefix increment (++v) allowed
     - if else, switch , loops allowed
-6. binary literals
+5. binary literals
     - provides a convenient way to represent a binary. int b1 = 0b00111011;
-8. digit separators
+6. digit separators
     -  use of single quotes in numeric literals, making them easier to read.
     -  int price = 1'000;
-9. return type deduction for functions
+7. return type deduction for functions
     - allows functions to deduce their return type automatically based on the type of their return
     - auto add(int x, int y){return x+y;}
-10. aggregate classes with default non-static member initializers.
-11. Standard user-defined literals
+8. aggregate classes with default non-static member initializers.
+9. Standard user-defined literals
     - auto str = "hello world"s; //auto deduces string
     - auto dur = 60s;            // auto deduces chrono::seconds
-12. Tuple addressing via type
+10. Tuple addressing via type
     - std::tuple<string, string, int> t("foo", "bar", 7);
     - int i = std::get \<int\>(t);        
 
 ## New library features
-9. std::make_unique
+11. std::make_unique
     - auto ptr = std::make_unique\<int\>(5); std::cout<<*ptr;
     - auto arr = std::make_unique\<int[]\>(10); //int array of size 10
     - arr[0] to arr[9]
-10. std::shared_timed_mutex and std::shared_lock
+12. std::shared_timed_mutex and std::shared_lock
 
 ----------------------------------------------------------
 # C++ 17
