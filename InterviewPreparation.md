@@ -129,10 +129,22 @@
     ```
    
 3. Variable declaration in if and switch
-4. if constexpr statement
-5. Structured bindings
-6. Fold Expressions
-7. Direct list initialization of enums
+    ```
+    if(int x = getVal(); x == 25)
+        std::cout<<"x is 25";
+    else
+        std::cout<<x;
+    ```
+    ```
+    switch(Variable declaration ; variable)
+    {
+        // Cases
+    }
+    ```
+5. if constexpr statement
+6. Structured bindings
+7. Fold Expressions
+8. Direct list initialization of enums
 
 ------------------------------------------------
 TTL JV 1 interview
