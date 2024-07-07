@@ -92,11 +92,13 @@
 5. binary literals
 6. digit separators
 7. return type deduction for functions
-8. aggregate classes with default non-static member initializers.
-9. Standard user-defined literals
+    - allows functions to deduce their return type automatically based on the type of their return
+    - auto add(int x, int y){return x+y;}
+9. aggregate classes with default non-static member initializers.
+10. Standard user-defined literals
     - auto str = "hello world"s; //auto deduces string
     - auto dur = 60s;            // auto deduces chrono::seconds
-10. Tuple addressing via type
+11. Tuple addressing via type
     - tuple<string, string, int> t("foo", "bar", 7);
     - int i = get<int>(t);        // i == 7
 
