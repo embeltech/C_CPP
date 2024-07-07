@@ -92,7 +92,7 @@
     - multiple return statements allowed
     - prefix increment (++v) allowed
 6. binary literals
-    - provides a convenient way to represent a binary
+    - provides a convenient way to represent a binary. int b1 = 0b00111011;
 8. digit separators
     -  use of single quotes in numeric literals, making them easier to read.
     -  int price = 1'000;
