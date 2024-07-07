@@ -106,12 +106,14 @@
     - auto dur = 60s;            // auto deduces chrono::seconds
 12. Tuple addressing via type
     - std::tuple<string, string, int> t("foo", "bar", 7);
-    - int i = std::get \<int\>(t);        // i == 7
+    - int i = std::get \<int\>(t);        
 
 ## New library features
 9. std::make_unique
-    - auto ptr = std::make_unique \<int\> (5);
-11. std::shared_timed_mutex and std::shared_lock
+    - auto ptr = std::make_unique\<int\>(5); std::cout<<*ptr;
+    - auto arr = std::make_unique\<int[]\>(10); //int array of size 10
+    - arr[0] to arr[9]
+10. std::shared_timed_mutex and std::shared_lock
 
 ----------------------------------------------------------
 # C++ 17
