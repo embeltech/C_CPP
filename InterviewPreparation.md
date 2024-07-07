@@ -92,7 +92,8 @@
     - multiple return statements allowed
     - prefix increment (++v) allowed
 6. binary literals
-7. digit separators
+    - provides a convenient way to represent a binary
+8. digit separators
     -  use of single quotes in numeric literals, making them easier to read.
     -  int price = 1'000;
 9. return type deduction for functions
