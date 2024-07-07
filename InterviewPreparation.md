@@ -91,6 +91,7 @@
 5. relaxed restrictions on constexpr functions
     - multiple return statements allowed
     - prefix increment (++v) allowed
+    - if else, switch , loops allowed
 6. binary literals
     - provides a convenient way to represent a binary. int b1 = 0b00111011;
 8. digit separators
