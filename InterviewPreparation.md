@@ -110,7 +110,7 @@
 
 ## New library features
 9. std::make_unique
-    - auto ptr = std::make_unique<int>(5);
+    - auto ptr = std::make_unique <int> (5);
 11. std::shared_timed_mutex and std::shared_lock
 
 ----------------------------------------------------------
