@@ -82,8 +82,8 @@
 # C++ 14 [Feature List](https://blogs.embarcadero.com/a-complete-guide-to-the-list-of-features-in-c-14/)
 ## New language features
 1. variable templates
-    - template <class T> constexpr T e = T(2.718281828459045);
-    - int x = e<int>; double d = e<double>;
+    - `template <class T> constexpr T e = T(2.718281828459045);`
+    - `int x = e<int>; double d = e<double>;`
 2. lambdas
     - generic lambda : use of auto in parameters datatype
     - lambda init-capture : initializing captured variable in capture clause. capture by move useful for unique_ptr
@@ -96,33 +96,43 @@
     - provides a convenient way to represent a binary. int b1 = 0b00111011;
 6. digit separators
     -  use of single quotes in numeric literals, making them easier to read.
-    -  int price = 1'000;
+    -  `int price = 1'000;`
 7. return type deduction for functions
     - allows functions to deduce their return type automatically based on the type of their return
-    - auto add(int x, int y){return x+y;}
+    - `auto add(int x, int y){return x+y;}`
 8. aggregate classes with default non-static member initializers.
 9. Standard user-defined literals
-    - auto str = "hello world"s; //auto deduces string
-    - auto dur = 60s;            // auto deduces chrono::seconds
+    - `auto str = "hello world"s; //auto deduces string`
+    - `auto dur = 60s;            // auto deduces chrono::seconds`
 10. Tuple addressing via type
-    - std::tuple<string, string, int> t("foo", "bar", 7);
-    - int i = std::get \<int\>(t);        
+    - `std::tuple<string, string, int> t("foo", "bar", 7);`
+    - `int i = std::get<int>(t);`        
 
 ## New library features
 11. std::make_unique
-    - auto ptr = std::make_unique\<int\>(5); std::cout<<*ptr;
-    - auto arr = std::make_unique\<int[]\>(10); //int array of size 10
+    - `auto ptr = std::make_unique<int>(5); std::cout<<*ptr;`
+    - `auto arr = std::make_unique<int[]>(10); //int array of size 10`
     - arr[0] to arr[9]
 12. std::shared_timed_mutex and std::shared_lock
 
 ----------------------------------------------------------
 # C++ 17
 1. Nested Namespaces
-2. Variable declaration in if and switch
-3. if constexpr statement
-4. Structured bindings
-5. Fold Expressions
-6. Direct list initialization of enums
+    ```
+    namespace BMWgroup::Mini::plant {
+    
+        class vehicle {
+        
+        };
+    
+    }
+    ```
+   
+3. Variable declaration in if and switch
+4. if constexpr statement
+5. Structured bindings
+6. Fold Expressions
+7. Direct list initialization of enums
 
 ------------------------------------------------
 TTL JV 1 interview
