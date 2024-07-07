@@ -82,16 +82,18 @@
 # C++ 14
 ## New language features
 1. variable templates
-2. lambdas
+    - template <class T> constexpr T e = T(2.718281828459045);
+    - int x = e<int>; double d = e<double>;
+3. lambdas
     - generic lambda : use of auto in parameters datatype
     - lambda init-capture : initializing captured variable in capture clause. capture by move useful for unique_ptr
-3. new/delete elision
-4. relaxed restrictions on constexpr functions
+4. new/delete elision
+5. relaxed restrictions on constexpr functions
     - multiple return statements allowed
     - prefix increment (++v) allowed
-5. binary literals
-6. digit separators
-7. return type deduction for functions
+6. binary literals
+7. digit separators
+8. return type deduction for functions
     - allows functions to deduce their return type automatically based on the type of their return
     - auto add(int x, int y){return x+y;}
 9. aggregate classes with default non-static member initializers.
