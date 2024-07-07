@@ -79,7 +79,7 @@
     - strongly scoped : colours var = colours::red;
 
 -------------------------------------------------------------------------------------------------------------------
-# C++ 14
+# C++ 14 [Feature List](https://blogs.embarcadero.com/a-complete-guide-to-the-list-of-features-in-c-14/)
 ## New language features
 1. variable templates
     - template <class T> constexpr T e = T(2.718281828459045);
@@ -93,14 +93,16 @@
     - prefix increment (++v) allowed
 6. binary literals
 7. digit separators
-8. return type deduction for functions
+    -  use of single quotes in numeric literals, making them easier to read.
+    -  int price = 1'000;
+9. return type deduction for functions
     - allows functions to deduce their return type automatically based on the type of their return
     - auto add(int x, int y){return x+y;}
-9. aggregate classes with default non-static member initializers.
-10. Standard user-defined literals
+10. aggregate classes with default non-static member initializers.
+11. Standard user-defined literals
     - auto str = "hello world"s; //auto deduces string
     - auto dur = 60s;            // auto deduces chrono::seconds
-11. Tuple addressing via type
+12. Tuple addressing via type
     - tuple<string, string, int> t("foo", "bar", 7);
     - int i = get<int>(t);        // i == 7
 
