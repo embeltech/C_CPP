@@ -141,10 +141,26 @@
         // Cases
     }
     ```
-5. if constexpr statement
-6. Structured bindings
-7. Fold Expressions
-8. Direct list initialization of enums
+5. if constexpr statement : The code inside the block which is not selected gets discarded during compilation.
+    ```
+    if constexpr (condition) {
+        // Code executed only if condition is true at compile time
+    } else {
+        // Code executed only if condition is false at compile time
+    }
+    ```
+7. Structured bindings
+    ```
+    std::map<std::string, std::string> MyMap{ 
+            { "Key1", "Val1" }, 
+            { "Key2", "Val2" }, 
+            { "Key3", "Val3" } 
+        }; 
+        for(auto [key,val] : MyMap)
+            std::cout<<key<<":"<<val<<std::endl;
+    ```
+9. Fold Expressions
+10. Direct list initialization of enums
 
 ------------------------------------------------
 TTL JV 1 interview
