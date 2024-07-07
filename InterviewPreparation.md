@@ -156,7 +156,7 @@
             { "Key2", "Val2" }, 
             { "Key3", "Val3" } 
         }; 
-        for(auto [key,val] : MyMap)
+    for(auto [key,val] : MyMap)
             std::cout<<key<<":"<<val<<std::endl;
     ```
 9. Fold Expressions
