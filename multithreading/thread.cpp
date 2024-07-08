@@ -6,7 +6,9 @@ void func(int id, char c)
 {
     for(int i = 0; i<20; i++)
     {
-        std::cout<<"Thread "<<id<<c<<" : i = "<<i<<"\n";
+        std::cout<<"Thread "<<id<<c<<" : i = "<<i<<"\n";    
+        //cout is related to output device resource so sometimes output is not linear in between threds
+        //use mutex for synchronization
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
