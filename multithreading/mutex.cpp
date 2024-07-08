@@ -13,7 +13,8 @@ void func(int id, char c)
         mtx.lock();
         shared_variable++;
         std::cout<<"Thread "<<id<<c<<" : shared_variable = "<<shared_variable<<"\n";
-        mtx.unlock();
+        mtx.unlock(); //what if exception or crash occures in the code before mutex unlock is called. This might lead to deadlock
+        //use lock_gurad for guranteed unlock
         
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
