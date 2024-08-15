@@ -11,6 +11,10 @@ class Rectangle{
         std::cout<<"Parameterised CTOR : \n";
         display();  
     }
+    /* Copy CTOR ALWAYS accepts object by reference only. If we use copy by value here it will call infinite loop of calling copy CTOR 
+    * to pass argument object to construct parameter of copy CTOR
+    *  Rectangle(const Rectangle obj)  --> not allowed
+    */
     Rectangle(const Rectangle& obj)
     {
         length = obj.length;
