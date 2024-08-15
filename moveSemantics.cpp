@@ -20,7 +20,7 @@ class Rectangle{
         length = obj.length;
         breadth = obj.breadth;
         std::cout<<"Copy CTOR : \n";
-        display();
+        display();  
     }
     void operator=(const Rectangle& obj)
     {
@@ -48,7 +48,7 @@ int main()
     std::cout<<"Hello World\n";
     //Default CTOR
     Rectangle R1;
-    R1.display(); 
+    R1.display(); //Rectangle::display(&R1);    => this=&R1
 
     //Parameterised CTOR
     Rectangle R2(3,5);   //Rectangle::Rectangle(&R2,3,5);
