@@ -48,10 +48,10 @@ int main()
     std::cout<<"Hello World\n";
     //Default CTOR
     Rectangle R1;
-    R1.display();
+    R1.display(); 
 
     //Parameterised CTOR
-    Rectangle R2(3,5);
+    Rectangle R2(3,5);   //Rectangle::Rectangle(&R2,3,5);
 
     //Copy CTOR
     Rectangle R3(R2);
