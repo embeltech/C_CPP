@@ -34,13 +34,14 @@ class derived:public base
     }
 };
 
+/* Just another label to object. base reference to derived object is equivalent to derived obj reference*/
 void test1 (const base & p)
 {
     std::cout << "-- test1 --\n";
     p.print ();
     std::cout<<"-----------\n";
 }
-
+/* Calls copy CTOR to construct base class object. Derived part of object is SLICED out causing object slicing*/
 void test2 (const base p)
 {
     std::cout << "-- test2 --\n";
