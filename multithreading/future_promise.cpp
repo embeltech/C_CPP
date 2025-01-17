@@ -18,8 +18,8 @@ void func1()
 		{
 			std::lock_guard<std::mutex> lock(printMtx);
 			std::cout<<"Thread 1: "<<i<<std::endl;
-            if(i == 50)
-                p1.set_value(i);
+		        if(i == 50)
+			   p1.set_value(i);
 		}
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
@@ -33,8 +33,8 @@ void func2()
 		{
 			std::lock_guard<std::mutex> lock(printMtx);
 			std::cout<<"\t\tThread 2: "<<i<<std::endl;
-            if(i == 75)
-                p2.set_value(i);
+                        if(i == 75)
+                           p2.set_value(i);
 		}
 		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
