@@ -201,3 +201,5 @@ Any impediance or viewers ?
 .Ledership experience to handle team?
 https://www.geeksforgeeks.org/features-of-c17-with-examples/
 https://www.codingame.com/playgrounds/2205/7-features-of-c17-that-will-simplify-your-code/introduction
+
+
