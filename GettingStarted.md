@@ -45,6 +45,12 @@
     - Creational : Singleton, factory  (product - concrete product, product factory - concrete product factory)
     - Structural : Proxy              (real service, proxy service)
     - Behavioral : Observer pattern  (publisher, subscriber)
+12. Storage Classes in CPP
+    - auto: Default storage class for local variables. Scope : Local, Lifetime : till function call
+    - register: Suggests Compiler to store the variable in a CPU register for faster access. Scope : Local, Lifetime : till function call
+    - static: Retains value between function calls, limits scope to the file. Scope : Local, Lifetime : till end of program
+    - extern: Declares a variable or function defined in another file. Scope : global, Lifetime : till end of program
+    - mutable: Used for member variables of class whose objects are declared as constants. It Allows modification of member variables even in const objects.
 
 ----------------------------------------------------------------------------
 ## C++ 11
