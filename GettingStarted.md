@@ -1,4 +1,4 @@
-# Generic C++ Study Part
+# Generic C++ Part
 1. What is Vtable and Vptr how it works?
 2. What is virtual destructor, why it is used?
     - virtual keyword required when base class pointer(bptr) stores derived class object and delete bptr is invoked.
@@ -42,7 +42,7 @@
     - Behavioral : Observer pattern  (publisher, subscriber)
 
 ----------------------------------------------------------------------------
-# C++ 11
+## C++ 11
 1. Type inference
     - auto - type infered from values assigned to variables.
     - decltype() - needs additinal information to infer type. Better for expressions.
@@ -82,8 +82,8 @@
     - strongly scoped : colours var = colours::red;
 
 -------------------------------------------------------------------------------------------------------------------
-# C++ 14 [Feature List](https://blogs.embarcadero.com/a-complete-guide-to-the-list-of-features-in-c-14/)
-## New language features
+## C++ 14 [Feature List](https://blogs.embarcadero.com/a-complete-guide-to-the-list-of-features-in-c-14/)
+### New language features
 1. variable templates
     - `template <class T> constexpr T e = T(2.718281828459045);`
     - `int x = e<int>; double d = e<double>;`
@@ -111,7 +111,7 @@
     - `std::tuple<string, string, int> t("foo", "bar", 7);`
     - `int i = std::get<int>(t);`        
 
-## New library features
+### New library features
 11. std::make_unique
     - `auto ptr = std::make_unique<int>(5); std::cout<<*ptr;`
     - `auto arr = std::make_unique<int[]>(10); //int array of size 10`
@@ -119,7 +119,7 @@
 12. std::shared_timed_mutex and std::shared_lock
 
 ----------------------------------------------------------
-# C++ 17
+## C++ 17
 1. Nested Namespaces
     ```
     namespace BMWgroup::Mini::plant {
