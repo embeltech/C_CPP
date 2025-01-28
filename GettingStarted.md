@@ -76,8 +76,8 @@
     - It removes the function calls and evaluates the code/expressions in compile time.
     - should contain only one return statement
     - prefix increment (++v) was not allowed
-17. Deleted and defaulted functions
-18. Strongly-typed,scoped Enums
+16. Deleted and defaulted functions
+17. Strongly-typed,scoped Enums
     - strongly typed : underlying datatype can be provided. enum class colours:char{red,green,blue}
     - strongly scoped : colours var = colours::red;
 
