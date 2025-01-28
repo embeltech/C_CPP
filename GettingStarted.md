@@ -20,23 +20,28 @@
       - pointers can be NULL
     - Reassignment
       - Whenever reassignment is needed prefer pointer else use reference as reassignment of reference to other variable is not possible.
-6. Static key word in C++?
+6. Static key word in C++
+    - Static Local Variables: Retain their value between function calls and have a lifetime till end of program.
+    - Static Global Variables: Access is limited to the file in which they are declared. Need to use extern for use in other files.
+    - Static Functions: Access is limited to the file in which they are declared. Need to use extern for use in other files.
+    - Static Data Members: Shared by all instances of the class and exist independently of any class objects.
+    - Static Member Functions: Can be called without an instance of the class (using class_name::static_func_name) and can only access static data members and other static member functions.
 7. what compiler provides by default in C++?
     - default constructor, 
     - default copy constructor
     - default copy-assignment operator
     - default destructor
-8. explicit keyword
+9. explicit keyword
     - if explicit is used for CTOR, copy CTOR, DTOR then compiler do not generate them by default.
     - No implicit type casting is done by compiler.
-9. What is IPC? Name some of them.
+10. What is IPC? Name some of them.
     - shared memory (used by POSIX)
     - Message Queues (used by Mac)
     - Pipe
     - socket
     - remote procedural call RPC (windows uses local procedural call)
-10. IPC synchronization
-11. Design Patterns
+11. IPC synchronization
+12. Design Patterns
     - Creational : Singleton, factory  (product - concrete product, product factory - concrete product factory)
     - Structural : Proxy              (real service, proxy service)
     - Behavioral : Observer pattern  (publisher, subscriber)
