@@ -1,4 +1,4 @@
-# Generic C++ Part
+## Generic C++ Part
 1. What is Vtable and Vptr how it works?
 2. What is virtual destructor, why it is used?
     - virtual keyword required when base class pointer(bptr) stores derived class object and delete bptr is invoked.
