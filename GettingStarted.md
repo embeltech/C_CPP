@@ -4,7 +4,7 @@
     - virtual keyword required when base class pointer(bptr) stores derived class object and delete bptr is invoked.
     - destruction should happen in reverse order -> destroy derived part then destroy base part
     - if virtual keyword is not used and bptr is destroyed then only base DTOR will be called and derived class part will not be destroyed.
-3. pure virtual fuction is used?
+3. Why pure virtual fuction is used?
     - one or more pure virtual functions makes class abstract whose object creation is not possible.
     - to force derived classes to provide its body else derived class becomes abstract.
     - pure virtual function can have body. It cannot have body inline but should be given outside of class using scope resolution. 
@@ -27,7 +27,8 @@
     - default copy-assignment operator
     - default destructor
 8. explicit keyword
-    - if explicit is used for CTOR, copy CTOR, DTOR then compiler do not generate them by default. No implicit type casting is done by compiler.
+    - if explicit is used for CTOR, copy CTOR, DTOR then compiler do not generate them by default.
+    - No implicit type casting is done by compiler.
 9. What is IPC? Name some of them.
     - shared memory (used by POSIX)
     - Message Queues (used by Mac)
@@ -51,11 +52,12 @@
     - func(NULL) will create ambiguity to resolve to func(char * ptr) or func(int)
     - use nullptr for null pointers
 3. Range-Based for Loops
-4. Override and Final
+4. explicit
+5. Override and Final
     - override used at the end of class member function to ensure correct function is overriden in derived class
     - final keyword if used at the end of virtual function of base class, that function cannot be overridden in derived class
     - final keyword if used at the end of base class, that class cannot be inherited further.
-5. Smart Pointers
+6. Smart Pointers
     - list all member functions
         - shared_ptr : reset,use_count
         - unique_ptr : reset,release,std::move
@@ -63,18 +65,19 @@
     - implement your own version of shared_ptr, unique_ptr, weak_ptr
     - why auto_ptr removed in cpp17
 7. Lambdas
-8. Initializer lists
-9. Delegating constructors
-10. Move Semantics
-11. std::thread
-12. The constexpr keyword
+8. std::function, bind
+9. Initializer lists
+10. Delegating constructors
+11. Move Semantics
+12. std::thread
+13. Mutex, locks,condition variables
+14. Future,promise
+15. The constexpr keyword
     - It removes the function calls and evaluates the code/expressions in compile time.
     - should contain only one return statement
     - prefix increment (++v) was not allowed
-14. explicit
-15. std::function
-16. Deleted and defaulted functions
-17. Strongly-typed,scoped Enums
+17. Deleted and defaulted functions
+18. Strongly-typed,scoped Enums
     - strongly typed : underlying datatype can be provided. enum class colours:char{red,green,blue}
     - strongly scoped : colours var = colours::red;
 
