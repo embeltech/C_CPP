@@ -31,17 +31,17 @@
     - default copy constructor
     - default copy-assignment operator
     - default destructor
-9. explicit keyword
+8. explicit keyword
     - if explicit is used for CTOR, copy CTOR, DTOR then compiler do not generate them by default.
     - No implicit type casting is done by compiler.
-10. What is IPC? Name some of them.
+9. What is IPC? Name some of them.
     - shared memory (used by POSIX)
     - Message Queues (used by Mac)
     - Pipe
     - socket
     - remote procedural call RPC (windows uses local procedural call)
-11. IPC synchronization
-12. Design Patterns
+10. IPC synchronization
+11. Design Patterns
     - Creational : Singleton, factory  (product - concrete product, product factory - concrete product factory)
     - Structural : Proxy              (real service, proxy service)
     - Behavioral : Observer pattern  (publisher, subscriber)
