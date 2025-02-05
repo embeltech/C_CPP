@@ -1,1 +1,7 @@
 https://github.com/caveofprogramming/Cpp-Multithreading
+
+
+Thread pool
+
+Parallel Algorithms
+  Standard Library Parallel Algorithms: Using parallel versions of standard algorithms like std::for_each, std::transform, etc., introduced in C++17.
