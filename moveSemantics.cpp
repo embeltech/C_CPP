@@ -1,3 +1,12 @@
+/*
+*  # Rvalue: A temporary object that does not have memory location label (variable) 
+*     (e.g., literals, temporary objects returned by functions, expression value etc). 
+*  # Rvalue Reference: A reference that can bind object to an rvalue. It is declared using &&.
+*  # Move Semantics: Allows transferring of the resources owned by an object to another object, rather than being copied.
+*  # Move semantics is based on rvalue reference which enables binding object to rvalue then transfers(move) the resources from the source object to the newly constructed object 
+*/
+
+
 #include <iostream>
 class Rectangle{
   private:
