@@ -1,7 +1,7 @@
 /*
 * bool result = cv.wait_for(lock, <timeout>, <lambda_to_handle_spurious_wakeup>)
-* result = true -> condition met and wait is over , no timeout occured 
-* result = false -> condition NOT met, TIMEOUT occured
+* bIsCondMet = true -> condition met and wait is over , no timeout occured 
+* bIsCondMet = false -> condition NOT met, TIMEOUT occured
 */
 
 #include <iostream>
@@ -43,11 +43,11 @@ void func2(int id, char c)
     std::unique_lock<std::mutex> uCondLock(mtx_cond);
     //wait till shared_variable=9. 
     //So any spurious wakeup will check shared_variable==9 condition. If its true then only it will come out of wait. Else remain in wait. 
-    bool result = cond_var.wait_for(uCondLock, std::chrono::seconds(2), []{ return shared_variable==9; });
+    bool bIsCondMet = cond_var.wait_for(uCondLock, std::chrono::seconds(2), []{ return shared_variable==9; });
     uCondLock.unlock();
-    if(result)
+    if(bIsCondMet)
     {
-        // result is true means condition met
+        // bIsCondMet is true means condition met
         std::cout<<"Wait Over for Thread2\n";
         for(int i = 0; i<20; i++)
         {
@@ -60,7 +60,7 @@ void func2(int id, char c)
     }
     else
     {
-      // result is false means timeout occured
+      // bIsCondMet is false means timeout occured
       std::cout<<"TIMEOUT occured for Thread2\n";
     }
 }
