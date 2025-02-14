@@ -1,5 +1,5 @@
 /*
-* bool result = cv.wait_for(lock, <timeout>, <lambda_to_handle_spurious_wakeup>)
+* bool bIsCondMet = cv.wait_for(lock, <timeout>, <lambda_to_handle_spurious_wakeup>)
 * bIsCondMet = true -> condition met and wait is over , no timeout occured 
 * bIsCondMet = false -> condition NOT met, TIMEOUT occured
 */
