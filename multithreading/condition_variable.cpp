@@ -5,6 +5,7 @@
 #include <condition_variable>
 
 std::mutex mtx;
+// Condition variable has to be associated with mutex
 std::mutex mtx_cond;
 std::condition_variable cond_var;
 
