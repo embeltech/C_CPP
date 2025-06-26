@@ -1,0 +1,11 @@
+
+unordered -> Not Sorted.
+multi-> multiple keys allowed so not unique keys
+
+Map Type           |  Sorted Keys | Unique Keys | 
+-------------------------------------------------
+map                |      Yes     |     Yes     |  
+multimap           |      Yes     |     No      |
+unordered map      |      No      |     Yes     |
+unordered multimap |      No      |     No      |
+-------------------------------------------------
