@@ -1,0 +1,11 @@
+
+unordered -> Not Sorted.
+multi-> multiple elements allowed so not unique elements
+
+Set Type           |  Sorted elements | Unique elements | 
+---------------------------------------------------------
+set                |      Yes         |     Yes         |  
+multiset           |      Yes         |     No          |
+unordered set      |      No          |     Yes         |
+unordered multiset |      No          |     No          |
+---------------------------------------------------------
