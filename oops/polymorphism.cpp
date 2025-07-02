@@ -29,6 +29,13 @@ class base{
     }
 };
 
+/*    Derived object has two parts : Base class inherited part + new derived part.
+*     Derived class pointer can see both parts
+*     Base class pointer can see only base class part. (Base class pointer pointing to derived class object)
+*     To make base class pointer to see both parts use virtual keyword for functions. So it creates VTABLE.
+*     Base class pointer pointing to derived class object with VTABLE of derived object is referred and function call is resolved properly
+*/
+
 class derived1: public base
 {
     //__vptr pointer to VTable of derived1 class
