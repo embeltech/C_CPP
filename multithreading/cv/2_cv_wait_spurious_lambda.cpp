@@ -48,6 +48,7 @@ void func2(int id, char c)
     std::unique_lock<std::mutex> uCondLock(mtx_cond);
     //wait till shared_variable=9. 
     //So any spurious wakeup will check shared_variable==9 condition. If its true then only it will come out of wait. Else remain in wait. 
+    //cond_var.wait( Cond lock   , <Exit when condition is true> );
     cond_var.wait(uCondLock, []{ return shared_variable==9; });
     uCondLock.unlock();
     std::cout<<"Wait Over for Thread2\n";
