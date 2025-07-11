@@ -3,6 +3,11 @@ class base{
     //__vptr pointer to VTable of base class
     public:
     //CTOR
+    /*There is no virtual CTOR : Virtual keywork comes into effect for derived class object when stored in base class pointer.
+      Due to virtual keyword the linker accesses the VTABLE of derived class object.
+      Since at the time of CTOR call its not possible to have VTABLE as object itself is being constructed. 
+      Since there is no object hence no VTABLE hence not possible to have virtual CTOR
+    */
     base()
     {
         std::cout<<"Base CTOR\n";
